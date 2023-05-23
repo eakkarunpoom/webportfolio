@@ -1,0 +1,380 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  background-color: rgb(17,17,17);
+  color: white;
+  height: auto;
+}
+
+.nav-bar {
+  background-color: rgb(17,17,17);
+  display: flex;
+  justify-content: center;
+  height: auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-weight:bold;
+  z-index: 99;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  align-items: center;
+}
+
+.navbar-toggle {
+  background-color: white;
+  border: 2px solid white;
+}
+
+.menu-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-bar a:hover {
+  color:rgb(240, 161, 14);
+  text-decoration: none;
+  font-weight:bolder;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: white !important;
+}
+
+
+#about-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 128px 32px 0 32px;
+}
+
+.image-about-me {
+  width: 25%;
+}
+
+.image-about-me img {
+  width: 100%;
+  /* border-radius: 20px; */
+  border: 1.5px solid white;
+}
+
+.text-about-me {
+  width: 35%;
+  margin: 0 64px;
+}
+
+.typewriter span{
+  font-size: 1.5rem;
+  position: relative;
+  color: rgb(240, 161, 14);
+}
+
+.typewriter p{
+  font-size: 1rem;
+  position: relative;
+  color: #928e8e;
+}
+
+.navbar-toggle {
+  background-color: white !important;
+}
+
+.btn {
+  margin: 16px 0;
+}
+
+
+.btnn {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btnn button, .btn button {
+  background-color: rgb(240, 161, 14); /* กำหนดสีพื้นหลัง */
+  border: none;
+  color: rgb(0, 0, 0); /* กำหนดสีข้อความ */
+  padding: 15px 32px; /* กำหนดขนาดของ padding ทั้งหมด */
+  text-align: center; /* จัดการจัดวางข้อความในปุ่ม */
+  text-decoration: none; /* ไม่มีการเพิ่มเติมตกแต่งข้อความ */
+  display: inline-block; /* ปรับขนาดปุ่มให้เหมาะสม */
+  font-size: 16px; /* กำหนดขนาดฟอนต์ */
+  font-weight: bold;
+  margin: 4px 2px; /* กำหนดระยะห่างของปุ่ม */
+  cursor: pointer; /* เมาส์เป็นรูปแบบ cursor */
+  border-radius: 50px; /* กำหนดรูปร่างของปุ่ม */
+  -webkit-transition-duration: 0.4s; /* ให้การเปลี่ยนแปลงเป็น smooth */
+  transition-duration: 0.4s; /* ให้การเปลี่ยนแปลงเป็น smooth */
+  outline: none;
+}
+
+button:hover {
+  background-color: #555555; /* เมื่อผู้ใช้ชี้ไปที่ปุ่มจะเปลี่ยนสีพื้นหลัง */
+  color: white; /* เมื่อผู้ใช้ชี้ไปที่ปุ่มจะเปลี่ยนสีข้อความ */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  margin: 24px 0;
+}
+
+.skills {
+  margin: 64px 64px 0 64px;
+}
+
+#my-projects {
+  margin: 64px 64px 0 64px;
+}
+
+.col-pj {
+  width: 350px;
+  height: 350px;
+  background-color: rgb(77, 73, 66);
+  border-radius: 10%;
+}
+
+.img-pj {
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.col-pj img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.img-project {
+  width: 350px;
+}
+
+.img-project img {
+  width: 100%;
+}
+
+#my-exp {
+  margin: 64px 64px 0 64px;
+}
+
+#my-exp h1 {
+  margin-bottom: 24px;
+}
+
+.work-exp {
+  display: flex;
+  margin-top: 36px;
+}
+
+.work-exp img {
+  border-radius: 150px;
+}
+
+.text-exp {
+  margin-left: 64px;
+}
+
+.col {
+  height: 90px;
+  filter: drop-shadow(1px 12px 10px #494848);
+}
+
+.col img {
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: contain; /* เลือกการแสดงผลของภาพเพื่อให้คงความสัดส่วน */
+  max-height: 300px; /* กำหนดขนาดสูงสุดของรูปภาพ */
+}
+
+.carousel-indicators {
+  display: flex;
+}
+
+.carousel-inner {
+  padding-bottom: 48px;
+}
+
+.row-edu {
+  display: flex;
+  margin: 32px 0;
+}
+
+.col-image {
+  width: 250px;
+}
+
+.col-image img {
+  width: 100%;
+}
+
+.col-text {
+  margin-left: 64px;
+  align-items: center;
+}
+
+.edu-exp {
+  margin-top: 32px;
+}
+
+#my-exp h3 {
+  text-decoration: underline;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+#certifications {
+  margin: 64px 64px 0 64px;
+}
+
+.footer{
+  margin: 64px 64px 0 64px;
+}
+
+.footer h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.contact {
+  display: flex;
+  padding: 48px 0;
+  justify-content: center;
+  gap: 32px;
+}
+
+.row-pj{
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-top: 16px;
+  font-weight: bold;
+}
+
+
+.contact button {
+  background-color: rgb(240, 161, 14); /* กำหนดสีพื้นหลัง */
+  border: none; /* ไม่มีเส้นขอบ */
+  color: rgb(0, 0, 0); /* กำหนดสีข้อความ */
+  padding: 15px 32px; /* กำหนดขนาดของ padding ทั้งหมด */
+  text-align: center; /* จัดการจัดวางข้อความในปุ่ม */
+  text-decoration: none; /* ไม่มีการเพิ่มเติมตกแต่งข้อความ */
+  display: inline-block; /* ปรับขนาดปุ่มให้เหมาะสม */
+  font-size: 16px; /* กำหนดขนาดฟอนต์ */
+  font-weight: bold;
+  margin: 4px 2px; /* กำหนดระยะห่างของปุ่ม */
+  cursor: pointer; /* เมาส์เป็นรูปแบบ cursor */
+  border-radius: 50px; /* กำหนดรูปร่างของปุ่ม */
+  -webkit-transition-duration: 0.4s; /* ให้การเปลี่ยนแปลงเป็น smooth */
+  transition-duration: 0.4s; /* ให้การเปลี่ยนแปลงเป็น smooth */
+}
+
+.contact button:hover {
+  background-color: #555555; /* เมื่อผู้ใช้ชี้ไปที่ปุ่มจะเปลี่ยนสีพื้นหลัง */
+  color: white; /* เมื่อผู้ใช้ชี้ไปที่ปุ่มจะเปลี่ยนสีข้อความ */
+}
+
+
+@media (max-width: 768px) {
+  #about-me {
+    display: flex;
+    align-items:flex-start;
+  }
+
+  .typewriter h3 {
+    display: none;
+  }
+
+  .typewriter p {
+    display: none;
+  }
+
+  .typewriter h1{
+    font-size: 1.5rem;
+    position: relative;
+    color: white;
+  }
+    
+  .typewriter h1::after {
+    content: '|';
+    position: absolute;
+    right: 0;
+    bottom:0;
+    background-color: rgb(17,17,17);
+    color: white;
+    width: 90%;
+    animation: typing 4s steps(32) alternate infinite;
+  }
+
+  @keyframes typing {
+    from { width: 15% }
+  }
+  
+  .image-about-me img {
+    min-width: 160px;
+  }
+
+  .row-pj {
+    display: block;
+  }
+
+  .col-pj {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .work-exp {
+    display: block;
+    text-align: center;
+  }
+  .work-exp li {
+    text-align: left;
+  }
+  .text-exp {
+    margin: 0;
+  }
+  .row-edu {
+    display: block;
+    text-align: center;
+  }
+  .col-text li {
+    text-align: left;
+  }
+
+  .col-text {
+    margin: 0;
+  }
+
+  .col-image {
+    width: 100%;
+  }
+
+  .col-image img {
+    width: auto;
+    object-fit: contain;
+  }
+}
