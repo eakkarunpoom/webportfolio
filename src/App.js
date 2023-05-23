@@ -9,6 +9,7 @@ import JsIntermediate from './images/JsIntermediate.png';
 import cssIntermediate from './images/cssIntermediate.png';
 import JSclassModule from './images/JSclassModule.png';
 import projectJustfit from './images/projectJustfit.png';
+import todolist from './images/todolist.png';
 
 function App() {
   return (
@@ -94,6 +95,22 @@ function App() {
               </div>
               <div className='link-demo'>
                 <a href="https://justfit-d2-sbg9.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Demo</button></a>
+              </div>
+            </div>
+          </div>
+          <div className="col-pj">
+            <div className='img-pj'>
+              <img src={todolist} alt="todolist"/>
+            </div>
+            <div className="intro">
+              <p>Todo List</p>
+            </div>
+            <div className="btnn">
+              <div className='link-github'>
+                <a href="https://github.com/eakkarunpoom/todolistProject" target="_blank" rel="noopener noreferrer"><button>Github</button></a>
+              </div>
+              <div className='link-demo'>
+                <a href="https://todolist-project-six.vercel.app/" target="_blank" rel="noopener noreferrer"><button>Demo</button></a>
               </div>
             </div>
           </div>
