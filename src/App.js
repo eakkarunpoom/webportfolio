@@ -10,6 +10,8 @@ import cssIntermediate from './images/cssIntermediate.png';
 import JSclassModule from './images/JSclassModule.png';
 import projectJustfit from './images/projectJustfit.png';
 import todolist from './images/todolist.png';
+import Csharp from './images/Csharp.png';
+import profile from './images/profile.jpg';
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
       </Navbar>
       <div id="about-me">
         <div className="image-about-me">
-          <img src="https://scontent.fbkk28-1.fna.fbcdn.net/v/t1.6435-9/157123602_3876172065804918_3791693431658880305_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=6mBMSAwWSjUAX8wEGaw&_nc_oc=AQnOzLMC6218oC30eCz1YZ8D524sp8q0zYo-S8PuvI9hM0SLyafihbdksFh14chZFUKgNMKiQ_CS_-RVOGptM8W0&_nc_ht=scontent.fbkk28-1.fna&oh=00_AfCpt9RI5oGrpHoHuIBfdNmK5YPNjmOeN3RkHM4t8HPkqQ&oe=6473FCD1" alt="profile"/>
+          <img src={profile} alt="profile" />
         </div>
         <div className="text-about-me">
           <div className="typewriter">
@@ -231,6 +233,13 @@ function App() {
             <img
               className="d-block w-100"
               src={reactCer}
+              alt="JS-02"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={Csharp}
               alt="JS-02"
             />
           </Carousel.Item>
